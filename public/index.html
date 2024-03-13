@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cozystay</title>
+
+    <style>
+        :root {
+            --font-01: "Marcellus", serif;
+            --font-02: "Jost", sans-serif;
+            --font-03: "La Belle Aurore", cursive;
+            --color-01: #53624e;
+            --color-02: #b99d75;
+            --color-03: #fff;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .fsb {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fsa {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* header  */
+
+        #hd {
+            background-color: gray;
+            font-family: var(--font-02);
+            border-bottom: 1px solid yellow;
+        }
+
+        #d6 {
+            width: 95%;
+            margin: 0 auto;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        #d1 {
+            align-items: center;
+        }
+
+        #d2 {
+            padding-right: 15px;
+            font-size: 30px;
+            color: var(--color-03);
+            padding-bottom: 5px;
+            position: relative;
+            z-index: 2;
+        }
+
+        #u1 {
+            display: flex;
+            position: relative;
+        }
+
+        .a2 {
+            padding-bottom: 8px;
+            color: var(--color-03);
+            text-transform: uppercase;
+            font-size: 13px;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+            display: block;
+            width: 1%;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .l2:hover .a2 {
+            border-bottom: 1px solid var(--color-03);
+            width: 100%;
+        }
+
+        .u2 {
+            visibility: hidden;
+            position: absolute;
+            background-color: black;
+            padding: 30px;
+            width: max-content;
+            top: 80px;
+            transition: 0.3s;
+        }
+
+        .l1 {
+            padding: 10px 0;
+        }
+
+        .a6 {
+            color: var(--color-03);
+            font-size: 13px;
+        }
+
+        /* .a7 {
+            display: flex;
+        } */
+
+        /* .a7::after {
+            content: "\02C7";
+            font-size: 20px;
+            padding-top: 4px;
+            margin-left: 10px;
+
+        } */
+
+        #i1 {
+            width: 190px;
+        }
+
+        .l2 {
+            padding: 20px 15px;
+        }
+
+        .l2:hover .u2 {
+            visibility: visible;
+            top: 55px;
+        }
+
+        .a6:hover {
+            color: var(--color-02);
+        }
+
+        #d5 {
+            color: var(--color-03);
+        }
+
+        .a5 {
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        #a4 {
+            border: 1px solid var(--color-03);
+            padding: 12px 22px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        #a4:hover {
+            background-color: var(--color-03);
+            color: black;
+        }
+
+        #nav {
+            width: 100%;
+            background-color: rgba(141, 141, 128, 0.932);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #d3 {
+            border: 1px solid;
+            padding: 5%;
+            text-align: center;
+            width: 86%;
+        }
+
+        .a1 {
+            display: inline-block;
+            font-size: 50px;
+            padding: 1% 3%;
+            color: var(--color-03);
+            /* font-weight: bold; */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="hd">
+        <div id="d6" class="fsb">
+            <div id="d1" class="fsb">
+                <div id="d2">&#9776;</div>
+                <nav id="nav">
+                    <div id="d3">
+                        <a class="a1" href="#">Home</a>
+                        <a class="a1" href="#">Stay</a>
+                        <a class="a1" href="#">About the hotel</a>
+                        <a class="a1" href="#">Restaurants & Bars</a>
+                        <a class="a1" href="#">Spa & Wellness</a>
+                        <a class="a1" href="#">Events & Meetings</a>
+                        <a class="a1" href="#">Local Activities</a>
+                        <a class="a1" href="#">News</a>
+                        <a class="a1" href="#">Content</a>
+                        <a class="a1" href="#">Book Your Stay</a>
+                    </div>
+                </nav>
+                <div id="d4">
+                    <ul id="u1">
+                        <li class="l2">
+                            <a class="a2 a7" href="#">Home</a>
+                            <ul class="u2">
+                                <li class="l1"><a class="a6" href="#">island resort</a></li>
+                                <li class="l1"><a class="a6" href="#">mountain hotel</a></li>
+                                <li class="l1"><a class="a6" href="#">city aparthotel</a></li>
+                                <li class="l1"><a class="a6" href="#">countryside lodge</a></li>
+                                <li class="l1"><a class="a6" href="#">mountain chalet</a></li>
+                            </ul>
+                        </li>
+                        <li class="l2">
+                            <a class="a2 a7" href="#">Stay</a>
+                            <ul class="u2">
+                                <li class="l1"><a class="a6" href="#">Rooms Page</a></li>
+                                <li class="l1"><a class="a6" href="#">Room Details - Top Image</a></li>
+                                <li class="l1"><a class="a6" href="#">Room Details - Top Gallery</a></li>
+                                <li class="l1"><a class="a6" href="#">Room Details - Left Booking Form</a></li>
+                                <li class="l1"><a class="a6" href="#">Cart</a></li>
+                                <li class="l1"><a class="a6" href="#">Checkout</a></li>
+                                <li class="l1"><a class="a6" href="#">My Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="l2">
+                            <a class="a2 a7" href="#">Pages</a>
+                            <ul class="u2">
+                                <li class="l1"><a class="a6" href="#">About The Hotel</a></li>
+                                <li class="l1"><a class="a6" href="#">Restaurants & Bars</a></li>
+                                <li class="l1"><a class="a6" href="#">The Restaurant</a></li>
+                                <li class="l1"><a class="a6" href="#">Menu Page</a></li>
+                                <li class="l1"><a class="a6" href="#">Spa & Wellness</a></li>
+                                <li class="l1"><a class="a6" href="#">Events & Meetings</a></li>
+                                <li class="l1"><a class="a6" href="#">Local Activities</a></li>
+                                <li class="l1"><a class="a6" href="#">Activities Details Page</Details></a></li>
+                                <li class="l1"><a class="a6" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="l2"><a class="a2" href="#">news</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a id="a3" href="#"><img id="i1" src="img/logo.png" alt="logo"></a>
+            <div id="d5">
+                <a class="a5" "#">Tel: +41 22 345 67 88</a>
+                <a class="a5" "#">EN / FR</a>
+                <a class="a5" id="a4" "#">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
